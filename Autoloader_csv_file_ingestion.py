@@ -57,6 +57,8 @@ df = (
 df=df.withColumn(
             "update_ts", current_timestamp())
 
+######## Mapping Columns based on Target Table Structure ###########
+
 df_new = df.toDF(
     "network_id",
     "nleader_name",
